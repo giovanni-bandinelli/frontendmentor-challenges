@@ -2,22 +2,11 @@
 
 This is a solution to the [QR code component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
-## Table of contents
-
-- [Overview](#overview)
-  - [Links](#links)
-
-  - [Built with](#built-with)
-
-
-**Note: Delete this note and update the table of contents based on what sections you keep.**
-
-## Overview
-
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github repo's subdirectory](https://github.com/giovanni-bandinelli/frontendmentor-challenges/tree/main/qr-component-vanilla)
+- Live Site URL: [View the result]([https://your-live-site-url.com](https://giovanni-bandinelli.github.io/frontendmentor-challenges/qr-code-component-vanilla/
+))
 
 ### Built with
 
