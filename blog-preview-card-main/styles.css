@@ -75,6 +75,7 @@
   .tag {
     display: inline-block;
     background-color: var(--Yellow);
+    border: none;
     color: var(--Gray_950);
     font-size: 12px;
     font-weight: 600;
@@ -97,6 +98,10 @@
     color: var(--Gray_950);
     margin-bottom: 12px;
     white-space: nowrap;
+  }
+
+  .blogpost-title:hover{
+    color: var(--Yellow);
   }
 
   .blogpost-description {
