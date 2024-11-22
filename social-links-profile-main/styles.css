@@ -63,7 +63,7 @@ body{
 }
 
 .profile-picture{
-    width: 5rem;
+    width: 5.5rem;
     border-radius: 50%;
     max-width: 100%;
 }
@@ -102,7 +102,7 @@ body{
    text-decoration: none;
    font-weight: bold;
    padding: var(--spacing-150);
-   transition: all 0.3s ease;
+   transition: background-color 0.3s ease;
 }
 
 .profile-link:hover, .profile-link:focus {
