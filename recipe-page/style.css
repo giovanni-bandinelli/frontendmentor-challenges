@@ -1,0 +1,198 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Font Definitions */
+@font-face {
+  font-family: 'young-serif';
+  src: url('assets/fonts/young-serif/YoungSerif-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/static/Outfit-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/static/Outfit-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('./assets/fonts/outfit/static/Outfit-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+/* CSS Variables */
+:root {
+  /* Colors */
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
+  --Brown-800: hsl(14, 45%, 36%);
+
+  /* Typography */
+  --font-family-young-serif: 'young-serif', serif;
+  --font-family-outfit: 'Outfit', sans-serif;
+
+  /* Font sizes */
+  --font-size-1: 2.5rem; /* Text Preset 1 */
+  --font-size-2: 1.75rem; /* Text Preset 2 */
+  --font-size-3: 1.25rem; /* Text Preset 3 */
+  --font-size-4: 1rem; /* Text Preset 4 */
+
+  /* Line heights */
+  --line-height-100: 100%;
+  --line-height-150: 150%; /* For preset 4 */
+
+  /* Spacing */
+  --spacing-8: 0.5rem;
+  --spacing-10: 0.625rem;
+  --spacing-12: 0.75rem;
+  --spacing-16: 1rem;
+  --spacing-20: 1.25rem;
+  --spacing-24: 1.5rem;
+  --spacing-32: 2rem;
+  --spacing-40: 2.5rem;
+  --spacing-48: 3rem;
+  --spacing-128: 8rem;
+
+  /* Border Radius */
+  --border-radius: 1rem;
+
+  /* Breakpoints */
+  --breakpoint-md: 640px;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--font-family-outfit);
+  background-color: var(--Stone-100);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* Block: Card */
+.card {
+  background-color: white;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+/* Block: Card Header */
+
+
+.card__image {
+  width: 100%;
+}
+
+/* Block: Card Content */
+.card__content {
+  padding: var(--spacing-40) var(--spacing-32);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-32);
+}
+
+/* Element: Section */
+.card__section {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-32);
+}
+
+.card__section-title {
+  font-family: var(--font-family-young-serif);
+  font-size: var(--font-size-2);
+  line-height: var(--line-height-100);
+  color: var(--Brown-800);
+  margin-bottom: var(--spacing-12);
+}
+
+/* Block: Preparation Time */
+.card__prep-time {
+  background-color: var(--Rose-50);
+  padding: var(--spacing-16);
+  border-radius: var(--border-radius);
+}
+
+.card__prep-time-title {
+  font-family: var(--font-family-young-serif);
+  font-size: var(--font-size-3);
+  color: var(--Rose-800);
+  margin-bottom: var(--spacing-12);
+}
+
+/* Element: List */
+.card__list {
+  padding-left: var(--spacing-16);
+}
+
+.card__list-item {
+  margin-bottom: var(--spacing-12);
+  padding-left: var(--spacing-16);
+}
+
+.card__list-item::marker {
+  color: var(--Brown-800);
+  font-weight: bold;
+}
+
+/* Block: Nutrition Table */
+.card__table {
+  width: 100%;
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+.card__table-cell {
+  padding: var(--spacing-12);
+  border-bottom: 1px solid var(--Stone-150);
+}
+
+.card__table-cell--highlight {
+  color: var(--Brown-800);
+  font-weight: bold;
+}
+
+.card__table-row:last-child .card__table-cell {
+  border-bottom: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .card {
+    border: 1px solid white;
+  }
+
+  .card__header {
+    padding: var(--spacing-32) var(--spacing-40) var(--spacing-8);
+  }
+
+  .card__image{
+    border-radius: var(--border-radius);
+  } 
+}
+
+@media screen and (min-width: 1200px) {
+  .card{
+    max-width: 35rem;
+    border-radius: var(--border-radius);
+    margin: var(--spacing-32);
+  }
+}
