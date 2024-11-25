@@ -4,8 +4,8 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ### Links
 
-- Solution URL: [Github repo's subdirectory](https://github.com/giovanni-bandinelli/frontendmentor-challenges/tree/main/social-links-profile-main)
-- Live Site URL: [View the result](https://giovanni-bandinelli.github.io/frontendmentor-challenges/social-links-profile-main/)
+- Solution URL: [Github repo's subdirectory](https://github.com/giovanni-bandinelli/frontendmentor-challenges/tree/main/recipe-page)
+- Live Site URL: [View the result](https://giovanni-bandinelli.github.io/frontendmentor-challenges/recipe-page/)
 
 ### Built with
 
