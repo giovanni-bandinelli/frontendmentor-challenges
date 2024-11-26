@@ -121,7 +121,8 @@ body {
 
 .card__section-title {
   font-family: var(--font-family-young-serif);
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-1);
+  font-weight: 400;
   line-height: var(--line-height-100);
   color: var(--Brown-800);
   margin-bottom: var(--spacing-12);
@@ -148,6 +149,9 @@ body {
   margin-bottom: var(--spacing-12);
 }
 
+.card__divider{
+  background-color:var(--Stone-150);
+}
 /* Element: List */
 .card__list {
   padding-left: var(--spacing-16);
@@ -199,13 +203,9 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
-  body{
-    padding:var(--spacing-48);;
-  }
-
   .card{
     max-width: 48%;
     border-radius: var(--border-radius);
-    margin: var(--spacing-48);
+    margin: 10%;
   }
 }
