@@ -128,7 +128,7 @@ body {
 }
 .card__section-title--recipe-name{
   font-family: var(--font-family-young-serif);
-  font-size: var(--font-size-2);
+  font-size: var(--font-size-1);
   line-height: var(--line-height-100);
   color: var(--Stone-900);
   margin-bottom: var(--spacing-12);
@@ -142,7 +142,7 @@ body {
 }
 
 .card__prep-time-title {
-  font-family: var(--font-family-young-serif);
+  font-family: var(--font-family-outfit);
   font-size: var(--font-size-3);
   color: var(--Rose-800);
   margin-bottom: var(--spacing-12);
@@ -202,7 +202,7 @@ body {
   body{
     padding:var(--spacing-48);;
   }
-  
+
   .card{
     max-width: 48%;
     border-radius: var(--border-radius);
