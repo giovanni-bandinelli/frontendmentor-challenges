@@ -22,15 +22,21 @@ body{
     font-size: 14px;
     background-color: var(--Cream);
     color: var(--DarkGrayishBlue);
-  
-
-    padding: 8%;
+    max-height: 100vh;
+    padding-top: 8%;
 }
 
+.App{  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 /* Card main styling, mobile first  */
 .product-preview-card{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+
     background-color: white;
     border: 0px solid white;
     border-radius: 10px;
@@ -40,21 +46,23 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
 
-    max-width: 100%;
+    width: 100%;
+    max-width: clamp(90%, 60rem, 42%);/*no clue what im doing here, looks bad with width: 700-1100px in my opinion*/
 }
 
-.image-product-wrapper{
-    flex: 1 1 60%;
+.image-product-wrapper,/*both card's sections take 50% of space ideally?*/
+.product-info-section {
+    flex: 1 1 50%;
 }
 
 .image-product-wrapper > img{
     width: 100%;
-    height: auto; 
-    display: block;
+    height: 100%; 
+    object-fit: cover;
 }
 
 .product-info-section{
-    flex: 1 1 40%;
+    
 
     display: flex;
     flex-direction: column;
@@ -119,23 +127,12 @@ body{
 }
 /* Desktop layout styling (I kinda use random widths for breakpoints*/
 @media screen and (min-width: 760px) {
-    .App{
-        max-height: 100vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
     .product-preview-card{
         max-width: 42%;
         flex-direction: row;
     }
-
-    .image-product-wrapper{
-        flex: 1 1 50%;
-    }
     
     .product-info-section{
-        flex: 1 1 50%;
         justify-content: space-around;
     }
 }

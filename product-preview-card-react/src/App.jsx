@@ -1,4 +1,4 @@
-import ProductPreviewCard from './components/productPreviewCard';
+import ProductPreviewCard from "./components/product-preview-card";
 
 function App() {
     return (

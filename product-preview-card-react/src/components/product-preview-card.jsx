@@ -1,7 +1,7 @@
 import desktopImage from '../assets/image-product-desktop.jpg';
 import mobileImage from '../assets/image-product-mobile.jpg';
 
-import CheckoutButton from './checkoutButton';
+import CheckoutButton from './checkout-button';
 
 
 /*some silly stuff 'cause I'm bored*/
@@ -9,7 +9,7 @@ const handleClick = () => {
     window.open("https://www.youtube.com/watch?v=dQw4w9WgXcQ&autoplay=1", "_blank");
 };
 
-function productPreviewCard() {
+function ProductPreviewCard() {
 
     return (
         <article className="product-preview-card">
@@ -38,4 +38,4 @@ function productPreviewCard() {
     )
   }
   
-  export default productPreviewCard
+  export default ProductPreviewCard
