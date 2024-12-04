@@ -2,9 +2,9 @@ import ProductPreviewCard from "./components/product-preview-card";
 
 function App() {
     return (
-        <div className="App">
+        <main className="App">
             <ProductPreviewCard />
-        </div>
+        </main>
     );
 }
 
